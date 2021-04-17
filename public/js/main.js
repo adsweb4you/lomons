@@ -22,16 +22,16 @@ $(".dropdown-menu").hover(function () {
     }
 );
 
-
-// aboutslider active circle
-
-// $("[data-target='#aboutslider']").click(function (e) { 
-//     e.preventDefault();
-//     $(this).siblings().removeClass("active");
-//     $(this).addClass("active")
-    
-// });
-
+// car icon hover
+$(".carico").hover(function () {
+     let hover = $(this).children().find("img").data('hover');
+     
+    $(this).children().find("img").attr('src', hover);
+  }, function () {
+     let src = $(this).children().find("img").data('src');
+     $(this).children().find("img").attr('src', src);
+  }
+);
  
 
 // end ready
