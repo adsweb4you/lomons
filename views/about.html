@@ -108,96 +108,83 @@
     </div>
   </nav>
 
-  <!-- content -->
-  <section class="auth"> 
+   <!-- Page Content -->
+   <section class="abouts"> 
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-              <form action="" class="auth-form" method="post">
-                  <p class="text-center">რეგისტრაციისთვის 
-                    შეავსეთ მოცემულობა</p>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control"  placeholder="სახელი">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" class="form-control"    placeholder="გვარი">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" class="form-control"    placeholder="ელ-ფოსტა">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="number" class="form-control"    placeholder="მობილურის ნომერი">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control"  placeholder="პაროლი">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control"  placeholder="გაიმეორეთ პაროლი">
-                    </div>
-
-                    <div class="form-group mb-5 mt-4">
-                        <div class="form-check text-center">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">
-                            ვეთანხმები <a href="">წესებს </a>  
-                          </label>
-                        </div>
-                      </div>
-
-                    <button type="button" data-toggle="modal" data-target="#user" class="btn btn-auth">რეგისტრაცია</button>
-
-              </form>
-            </div>
-            <div class="col-md-6">
-                <form action="" class="auth-form mt-5 mt-lg-0" method="post">
-                    <p class="text-center">გაიარეთ ავტორიზაცია</p>
-  
-                
-  
-                      <div class="form-group">
-                          <input type="email" class="form-control"    placeholder="ელ-ფოსტა">
-                      </div>
    
+      <div class="row">
+         <div class="col-md-6">
+          <h3 class="sec-head">
+             <img src="../public/img/info.svg" alt="">
+              ჩვენ შესახებ
+           </h3>
   
-                      <div class="form-group">
-                          <input type="password" class="form-control"  placeholder="პაროლი">
-                      </div>
+           <div class="text-cont">
+               <p>
+                  ლექსი — რიტმულად და ინტონაციურად მოწესრიგებული მეტყველება,
+                  რომელიც ენის პროსოდიული ბუნების შესაბამისად 
+                  განსაზღვრული
+                  ლექსთწყობის კანონებზეა დამყარებული (ტერფი – 
+                  ანტიკურ ლექსში;
+                  ბაითი – არაბულ-სპარსულში; კვალიტატუროსა – 
+               </p>
+           </div>
   
-                     
-  
-                
-  
-                      <button class="btn btn-auth mt-4">ავტორიზაცია</button>
-  
-                </form>
+           <h3 class="sec-head pt-32">
+              <img src="../public/img/goal.svg" alt="">
+               ჩვენი მიზანია
+            </h3>
+   
+            <div class="text-cont">
+                <p>
+                   ლექსი — რიტმულად და ინტონაციურად მოწესრიგებული მეტყველება,
+                   რომელიც ენის პროსოდიული ბუნების შესაბამისად 
+                   განსაზღვრული
+                   ლექსთწყობის კანონებზეა დამყარებული (ტერფი – 
+                   ანტიკურ ლექსში;
+                   ბაითი – არაბულ-სპარსულში; კვალიტატუროსა – 
+                </p>
             </div>
-        </div>
-    </div>
-   </section>
-  <!-- end content -->
-
-
-  <!-- Modal -->
-<div class="modal fade" id="user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered">
-      <div class="modal-content rounded-0">
-        <div class="modal-header border-bottom-0 ">
-           <img src="../public/img/close.svg" class="d-block ml-auto" alt="" data-dismiss="modal" aria-label="Close">
-        </div>
-        <div class="modal-body text-center p-3 pb-5">
-         <h4 class="mb-5">თქვენ წარმატებით <br> გაიარეთ რეგისტრაცია!</h4>
-         <img src="../public/img/done.svg"  class="mt-5 d-block mx-auto" alt="">
-        </div>
-       
+  
+  
+         </div>
+         <div class="col-md-6">
+          <div id="aboutslider" class="carousel slide  pl-0 pl-md-2 "  data-ride="carousel">
+              <ol class="carousel-indicators ind2 mb-1 bt-25">
+                  <li data-target="#aboutslider" data-slide-to="0" class="active"></li>
+                  <li data-target="#aboutslider" data-slide-to="1"></li>
+                  <li data-target="#aboutslider" data-slide-to="2"></li>
+                </ol>
+              <div class="carousel-inner " role="listbox">
+               
+                <div class="carousel-item active" style="background-image: url('../public/img/slider.png')">
+                  
+                </div>
+                 
+                <div class="carousel-item" style="background-image: url('../public/img/slider.png')">
+                 
+                </div>
+                
+                <div class="carousel-item" style="background-image: url('../public/img/slider.png')">
+                 
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#aboutslider" role="button" data-slide="prev">
+               <img class="w-25" src="../public/img/left.svg" alt="">
+              </a>
+              <a class="carousel-control-next" href="#aboutslider" role="button" data-slide="next">
+                <img class="w-25" src="../public/img/right.svg" alt="">
+              </a>
+            </div>
+  
+           <img src="../public/img/chat.svg" class="d-block position-relative pts-4 ml-auto" alt="">
+  
+         </div>
       </div>
-    </div>
+      <!-- /.row -->
   </div>
+  </section>
 
   <!-- Footer -->
   <footer>
