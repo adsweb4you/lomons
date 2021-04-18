@@ -2,6 +2,10 @@
   font-family: BpgArial;
   src: url("../fonts/bpg_arial_2009.ttf");
 }
+a:hover {
+  text-decoration: none;
+}
+
 .carousel-item {
   height: 540px;
   min-height: 300px;
@@ -231,6 +235,139 @@ li[data-target="#aboutslider"] {
 .bg-lig {
   padding: 48px 0 39px;
   background-color: #f2f3ff;
+}
+
+.mycar {
+  background-color: #e8eaff;
+  padding-bottom: 103px;
+}
+.mycar .bg-lig {
+  padding: 84px 0 20px !important;
+}
+.mycar .col-lg {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mycar .mod-head:after {
+  content: "";
+  width: 25rem !important;
+}
+.mycar .cars-body {
+  font-family: BpgArial;
+  padding: 11px;
+}
+.mycar .cars-body h4 {
+  color: #222222;
+  font-size: 14px;
+}
+.mycar .cars-body h4 a {
+  color: #3366ff;
+}
+.mycar .cars-body p {
+  color: #333333;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+.mycar .cars-body span {
+  color: #ff8039;
+  font-size: 14px;
+  background-color: #e8eaff;
+  border-radius: 10px;
+  padding: 10px 14px 12px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.carscard {
+  background-color: #ffffff;
+}
+.carscard img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.news {
+  padding: 175px 0 177px;
+  background-color: #f2f3ff;
+}
+.news .col-md-6 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.news .news-card {
+  height: 303px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.news .news-card h1 {
+  font-family: BpgArial;
+  color: #ffffff;
+  font-size: 20px;
+}
+.news .news-card .text {
+  padding: 13px 24px 7px;
+  background-color: #f2f3ff6b;
+}
+
+footer {
+  background-color: #333333;
+  padding-top: 34px;
+}
+footer .list-inline {
+  margin-bottom: 54px;
+}
+footer .list-inline li a {
+  color: #ffffff;
+  font-family: BpgArial;
+  font-size: 18px;
+}
+footer .list-inline .list-inline-item:not(:last-child) {
+  margin-right: 38px;
+}
+footer form {
+  font-family: BpgArial;
+}
+footer form input {
+  background-color: #555555 !important;
+  padding: 20px 20px 18px !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  border-radius: 8px !important;
+}
+footer form input::placeholder {
+  opacity: 0.5;
+}
+footer form button {
+  background-color: #ff8039 !important;
+  font-size: 18px !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+}
+
+.social a:not(:last-child) {
+  margin-right: 16px;
+}
+
+.under {
+  height: 2px;
+  margin-top: 87px;
+  margin-bottom: 30px;
+  background-color: #4f4f4f;
+}
+
+.copy {
+  padding-bottom: 30px;
+}
+.copy p {
+  font-family: BpgArial;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
