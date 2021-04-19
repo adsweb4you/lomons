@@ -54,5 +54,27 @@ $("#play").click(function (e) {
 
 });
 
+// slider scroli
+let lastclick;
+
+$(".slid").click(function (e) { 
+ 
+  if(lastclick < e.clientX){
+    $(".slid").scrollLeft($(".slid").scrollLeft() + 105);
+  }else{
+  $(".slid").scrollLeft($(".slid").scrollLeft() - 105);
+  }
+ 
+    lastclick =  e.clientX;
+});
+
+
+
+$(".slid img").click(function (e) { 
+  let nwsrc = $(this).attr('src');
+  $(".current").attr('src',nwsrc);
+});
+ 
+
 // end ready
 });

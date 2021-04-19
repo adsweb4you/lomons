@@ -716,6 +716,7 @@ footer form button {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  margin-bottom: 10px;
 }
 .detals .subheader .title h1 {
   font-weight: bold;
@@ -736,6 +737,53 @@ footer form button {
 .detals .galery img {
   height: 275px;
   object-fit: cover;
+}
+.detals .galery .slid {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.detals .galery .slid::-webkit-scrollbar {
+  width: 9px;
+}
+.detals .galery .slid::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 6px;
+  height: 12px;
+}
+.detals .galery .slid::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 6px;
+}
+.detals .galery .slid::-webkit-scrollbar-thumb:hover {
+  background: #222222;
+}
+.detals .galery .slid img {
+  width: 25%;
+  height: 95px;
+  padding-left: 10px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.detals .galery .slid img:first-child {
+  padding-left: 0;
+}
+.detals .galery .slid img:hover {
+  cursor: pointer;
+}
+.detals .info {
+  padding: 14px;
+}
+.detals .info p {
+  color: #333333;
+  font-family: BpgArial;
+  font-size: 14px;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 1200px) {
