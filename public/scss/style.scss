@@ -3,6 +3,8 @@
     src: url('../fonts/bpg_arial_2009.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 a:hover{
     text-decoration: none;
 }
@@ -652,6 +654,188 @@ footer{
         }
     }
 }
+
+.video{
+    padding: 73px 0 170px;
+    background-color: #e8eaff;
+        .header{
+           
+            .container{ 
+                background-color: #333333;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 11px 22px 12px;
+                box-shadow:0px 4px 23px rgba(0,0,0,0.25);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+           
+            .mac{
+                display: flex;
+                align-items: center;
+              span{ 
+                   width: 15px;
+                    height: 15px;
+                    border-radius: 8px;
+                    display: inline-block;
+                    margin-right: 8px;
+                  &:nth-child(1){
+                    background-color: #ff4747;
+                  }
+                  &:nth-child(2){
+                    background-color: #f0c419;
+                  }
+                  &:nth-child(3){
+                    background-color: #9bffa5;
+                  }
+              }
+            }
+        }
+    .container{
+        background-color: #444444;
+        padding: 0 32px 45px;
+
+
+
+        .circ{ 
+            display: flex;
+            align-items: center;
+            span{
+            margin-right: 3px;
+            width: 5px;
+            height: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            background-color: #555555;
+            }
+        }
+
+    }
+
+.vid-text{
+    p{
+        font-family: BpgArial; 
+        color: #ffffff;
+        font-size: 14px;
+
+    } 
+     &:first-child p{
+      margin-top: 10px;
+     }
+     &:nth-child(2) p{
+        margin-top: 34px;
+        margin-bottom: 37px;
+       }
+}
+
+#myvideo{
+    height: 400px;
+    object-fit: cover;
+    & + svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     &:hover{
+         cursor: pointer;
+     }
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.player{
+    height: 400px;
+    overflow-y: scroll;
+
+        /* width */
+&::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  /* Track */
+&::-webkit-scrollbar-track {
+    background:   #222222; 
+  
+  }
+   
+  /* Handle */
+&::-webkit-scrollbar-thumb {
+    background: #ece9e0; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+&::-webkit-scrollbar-thumb:hover {
+    background: #ece9e0; 
+  }
+
+    ul{
+        background-color: #ffffff;
+        list-style: none;
+        padding-left: 0;
+ 
+     li{
+        font-family: BpgArial; 
+        color: #000000;
+        background-color: #ece9e0;
+        padding: 15px 15px 15px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        &.active{
+            color: #ffff;
+            background-color: #ff8039;
+        }
+         &:hover{
+             cursor: pointer;
+
+         }
+     }
+    }
+}
+
+}
+
+.detals{
+    background-color: #e8eaff;
+    padding-top: 73px;
+    .subheader{ 
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+        .title{
+           
+            h1{
+                font-weight: bold;
+                padding: 26px 29px 29px;
+                font-family: 'Montserrat';
+                font-size: 24px;
+                margin-bottom: 0;
+                color: #333333;
+            }
+        }
+
+        .ico{
+            display: flex;
+            align-items: center;
+            a{
+                display: inline-block;
+                margin-right: 23px;
+            }
+        }
+    }
+
+    .galery{
+        img{
+            height: 275px;
+            object-fit: cover;
+        }
+    }
+}
+
 
 // responsive
 

@@ -32,7 +32,27 @@ $(".carico").hover(function () {
      $(this).children().find("img").attr('src', src);
   }
 );
- 
+
+$(".playlist").click(function (e) { 
+  e.preventDefault();
+  $(this).parent().find(".active").removeClass("active");
+  $(this).addClass("active");
+
+  $("#play").fadeIn("fast");
+
+  let src =  $(this).data('src');
+
+  $("#myvideo").attr('src', src);
+
+});
+
+$("#play").click(function (e) { 
+  e.preventDefault();
+  $(this).fadeOut("fast");
+  $("#myvideo").get(0).play();
+  $("#myvideo").prop("controls", true);
+
+});
 
 // end ready
 });
