@@ -1024,6 +1024,48 @@ footer{
     }
 }
 
+.search {
+    position: absolute;
+    right: 15px;
+    bottom: -4px;
+    max-width: 100%;
+    width: 87%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s;
+    &.showed{
+    opacity: 1;
+    pointer-events: all;
+    transition: all .6s;
+    }
+    input{
+        width: 100%;
+        font-family: BpgArial;
+        border: navajowhite;
+        padding: 3px 7px;
+        background-color: #222222;
+    }
+}
+
+.navbar{
+    transition: all .6s;
+ &.showednav{
+    transition: all .6s;
+    height: 132px;
+  
+}
+}
+
+.fils{
+    position: absolute;
+    right: 11px;
+    top: 0;
+    img{
+        padding-left: 7px;
+        width: 25px;
+        height: 18px;
+    }
+}
 // responsive
 
 @media (max-width:1200px){
@@ -1050,12 +1092,42 @@ footer{
     .carcontent .col-lg-3, .savedcar .col-lg-2{
         background-color: #fefeff;
     }
+
+    .nav-link {
+  
+        padding: 15px 1rem 1px;
+  
+    }
+
+    .search {
+ 
+        bottom: -22px;
+ 
+    }
+
+    .navbar.showednav {
+ 
+        height: 363px;
+    }
+
+    .navbar-nav{
+        margin-left: 0 !important;
+    }
+
+    .side-ul{
+      flex-direction: inherit;
+ 
+    }
+
 }
 
 @media (max-width: 800px){
 .swiper-button-nexts{
     left: 7px !important;
     z-index: 9999;
+
+    
+
 }
 .swiper-button-prevs{
   right: 7px  !important;

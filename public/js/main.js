@@ -82,5 +82,13 @@ $(".current").click(function (e) {
   $("#imagmodal .modal-dialog").css("background-image", "url('"+ img +"')")
   
 });
+
+$(".srch").click(function (e) { 
+  e.preventDefault();
+
+  $(".search").toggleClass("showed");
+  $(".navbar").toggleClass("showednav");
+});
+
 // end ready
 });
