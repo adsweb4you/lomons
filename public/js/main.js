@@ -76,5 +76,11 @@ $(".slid img").click(function (e) {
 });
  
 
+$(".current").click(function (e) { 
+  e.preventDefault();
+  let img = $(this).attr('src');
+  $("#imagmodal .modal-dialog").css("background-image", "url('"+ img +"')")
+  
+});
 // end ready
 });

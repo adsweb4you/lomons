@@ -17,6 +17,8 @@
   <!-- Custom styles for this template -->
   <link href="../public/css/style.css" rel="stylesheet">
 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../public/css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -136,7 +138,7 @@
  
     <div class="col-md-5">
        <div class="galery">
-           <img src="../public/img/mycar/car7.jpg" class="w-100 current" alt="">
+           <img src="../public/img/mycar/car7.jpg" class="w-100 current" data-toggle="modal" data-target="#imagmodal" alt="">
            <div class="slid">
              <img src="../public/img/mycar/car6.jpg" alt="">
              <img src="../public/img/mycar/car7.jpg" alt="">
@@ -148,7 +150,7 @@
        </div>
     </div>
 
-    <div class="col-md-3 pl-3 pl-lg-0 bg-white">
+    <div class="col-md pl-3 pl-lg-0 pr-3 pr-lg-0  ">
       <div class="info">
        <p>მოდელი: Tundra</p>
        <p>მდგომარეობა: <span class="run"> იქოქება & დადის</span> </p>
@@ -165,16 +167,204 @@
     </div>
 
     
-    <div class="col-md-4">
+    <div class="col-md">
         <div class="auction">
-            
+            <p>აუქციონის თარიღი: 12 თებერვალი 2021წ.</p>
+            <p>დრო: 19:50</p>
+            <span>ბიჯი: 1024$</span>
+            <p>აუქციონის გარეშე: 8000$</p>
         </div>
+        <div class="promo text-center">
+          <p>Toyota Tundra-ს ფასი ამჟამად აუქციონზე 
+            საშუალოდ შეადგენს 8000$-დან 9000$-მდე ღირებულებას</p>
+        </div>
+
+      <div class="calcu"> 
+        <div class="row">
+          <div class="col-lg-4 col-2">
+            
+            <!-- calc -->
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn rb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                </svg>
+              </button>
+              <button type="button" class="btn rb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                  <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                </svg>
+              </button>
+            </div>
+            <!-- / -->
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn rt-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+              <button type="button" class="btn rt-0">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-pause rota" viewBox="0 0 16 16">
+                  <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+          <div class="col-lg-8 col-10 position-relative d-flex justify-content-end align-items-center">
+
+            <img src="../public/img/chat.svg" class="" alt="">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="empty">  </div>
+
+    
+
     </div>
    
                 
     </div>
     </div>
     </section>
+
+
+    <section class="mycar likecar">
+
+      <div class="container pl-lg-0">
+        <h2 class="mod-head ">არსებული ავტომობილები:</h2>
+      </div>
+      <div class="bg-lig position-relative"> 
+      <div class="container position-relative"> 
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <!-- car item  -->
+          <div class="swiper-slide">
+            <div class="carscard">
+              <a href="../views/content.html">
+                <img src="../public/img/mycar/mycar1.svg" class="w-100 img-fluid" alt="">
+              </a>
+              <div class="cars-body">
+                <h4>მწარმოებელი: <a href=" ">BMW</a> </h4>
+                <p>მოდელი:M3</p>
+                <p>მდგომარეობა: იქოქება & დადის</p>
+                <p>ლოტის #: 3662210</p>
+                <p>გარბენი: 210 246კმ</p>
+                <span>ბიჯი: 200$</span>
+              </div>
+            </div>
+          </div>
+          <!-- /end item -->
+    
+           <!-- car item  -->
+           <div class="swiper-slide">
+            <div class="carscard">
+              <a href="../views/content.html">
+                <img src="../public/img/mycar/mycar2.svg" class="w-100 img-fluid" alt="">
+              </a>
+              <div class="cars-body">
+                <h4>მწარმოებელი: <a href=" ">BMW</a> </h4>
+                <p>მოდელი:M3</p>
+                <p>მდგომარეობა: იქოქება & დადის</p>
+                <p>ლოტის #: 3662210</p>
+                <p>გარბენი: 210 246კმ</p>
+                <span>ბიჯი: 200$</span>
+              </div>
+            </div>
+          </div>
+          <!-- /end item -->
+    
+           <!-- car item  -->
+           <div class="swiper-slide">
+            <div class="carscard">
+              <a href="../views/content.html">
+                <img src="../public/img/mycar/car8.jpg" class="w-100 img-fluid" alt="">
+              </a>
+              <div class="cars-body">
+                <h4>მწარმოებელი: <a href=" ">BMW</a> </h4>
+                <p>მოდელი:M3</p>
+                <p>მდგომარეობა: იქოქება & დადის</p>
+                <p>ლოტის #: 3662210</p>
+                <p>გარბენი: 210 246კმ</p>
+                <span>ბიჯი: 200$</span>
+              </div>
+            </div>
+          </div>
+          <!-- /end item -->
+    
+           <!-- car item  -->
+           <div class="swiper-slide">
+            <div class="carscard">
+              <a href="../views/content.html">
+                <img src="../public/img/mycar/car7.jpg" class="w-100 img-fluid" alt="">
+              </a>
+              <div class="cars-body">
+                <h4>მწარმოებელი: <a href=" ">BMW</a> </h4>
+                <p>მოდელი:M3</p>
+                <p>მდგომარეობა: იქოქება & დადის</p>
+                <p>ლოტის #: 3662210</p>
+                <p>გარბენი: 210 246კმ</p>
+                <span>ბიჯი: 200$</span>
+              </div>
+            </div>
+          </div>
+          <!-- /end item -->
+    
+           <!-- car item  -->
+           <div class="swiper-slide">
+            <div class="carscard">
+              <a href="../views/content.html">
+                <img src="../public/img/mycar/car6.jpg" class="w-100 img-fluid" alt="">
+              </a>
+              <div class="cars-body">
+                <h4>მწარმოებელი: <a href=" ">BMW</a> </h4>
+                <p>მოდელი:M3</p>
+                <p>მდგომარეობა: იქოქება & დადის</p>
+                <p>ლოტის #: 3662210</p>
+                <p>გარბენი: 210 246კმ</p>
+                <span>ბიჯი: 200$</span>
+              </div>
+            </div>
+          </div>
+          <!-- /end item -->
+     
+        </div>
+        <!-- /.row -->  
+  
+        </div>  <!-- /.swiper -->  
+      <div class="sws swiper-button-nexts">
+        <img src="../public/img/sw-l.svg" alt="">
+      </div>
+      <div class="sws swiper-button-prevs">
+        <img src="../public/img/sw-r.svg" alt="">
+      </div>
+      </div>
+
+      <!-- /.container -->
+    </div>
+    </section> 
+
+
+    <!-- Modal -->
+<div class="modal fade" id="imagmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content p-3 border-bottom-0">
+      
+ 
+        <img src="../public/img/close.svg" class="position-absolute   end-0 "  data-dismiss="modal" aria-label="Close" alt="">
+        
+ 
+      <div class="modal-body">
+      
+      </div>
+ 
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
   <footer>
@@ -283,6 +473,43 @@
   <script src="../public/js/jquery.min.js"></script>
   <script src="../public/js/bootstrap.bundle.min.js"></script>
   <script src="../public/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../public/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // init: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        navigation: {
+        nextEl: '.swiper-button-nexts',
+        prevEl: '.swiper-button-prevs',
+      },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        }
+      });
+    </script>
+
 </body>
 
 </html>

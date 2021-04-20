@@ -880,7 +880,8 @@ footer{
     }
 
     .info{
- 
+        background-color: #ffffff;
+        height: 100%;
         padding: 14px;
         p{
             color: #333333;
@@ -891,6 +892,137 @@ footer{
     }
 }
 
+.auction, .promo{
+         padding: 14px;
+         background-color: #ffffff;
+    p{
+        color: #333333;
+        font-family: BpgArial; 
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    span{
+    font-family: BpgArial;
+    color: #333333;
+    font-size: 14px;
+    margin-top: 7px;
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border: 3px solid #ff8039;
+    border-radius: 10px;
+    }
+}
+
+.promo{
+    padding: 10px 9px;
+    margin-top: 10px;
+}
+
+.calcu{
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 11px;
+    .rota{
+          transform: rotate(-90deg);
+    }
+
+    button{
+        background-color: #333333;
+        color: #fff;
+        padding: 2px;
+        padding-bottom: 0;
+  
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+
+        &.rb-0{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &.rt-0{
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        
+    }
+  
+}
+
+.empty{
+    height: 27px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.likecar{
+    padding-top: 90px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+ 
+ 
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+  color: #333333 !important;
+  }
+
+  .sws{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      &.swiper-button-nexts{
+          left: -40px;
+      }
+      &.swiper-button-prevs{
+        right: -40px;
+    }
+  }
+
+  .end-0{
+      right: 7px;
+      top: 7px;
+  }
+
+#imagmodal {
+    
+    .modal-dialog{
+        height: 450px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modal-content{
+        background-color: transparent;
+        img{
+            filter: invert(1);
+        }
+    }
+}
 
 // responsive
 
@@ -919,6 +1051,18 @@ footer{
         background-color: #fefeff;
     }
 }
+
+@media (max-width: 800px){
+.swiper-button-nexts{
+    left: 7px !important;
+    z-index: 9999;
+}
+.swiper-button-prevs{
+  right: 7px  !important;
+  z-index: 9999;
+}
+}
+
 
 
 @media (min-width: 576px){
