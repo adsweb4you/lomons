@@ -90,5 +90,11 @@ $(".srch").click(function (e) {
   $(".navbar").toggleClass("showednav");
 });
 
+$(".navbar-toggler").click(function (e) { 
+  e.preventDefault();
+  $(".search").removeClass("showed");
+  $(".navbar").removeClass("showednav");
+});
+
 // end ready
 });
