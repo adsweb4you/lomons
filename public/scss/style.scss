@@ -189,6 +189,9 @@ li[data-target="#aboutslider"]{
     background-color: #fff;
     box-shadow: 2.237px 3.316px 11.5px rgba(0,0,0,0.25);
     font-size: 14px;
+    p{
+        opacity: .8;
+    }
 }
 
 .mod-head{
@@ -507,7 +510,15 @@ footer{
     width: 320px;
     max-width: 100%;
     margin: auto;
-    font-family: BpgArial; 
+    font-family: BpgArial;
+    
+    p{
+        font-size: 22px;
+        margin-bottom: 41px;
+        color: #333333;
+    }
+
+    
      input:not([type="checkbox"]){
          box-shadow: 0px 4px 23px rgba(0,0,0,0.25);
          border: none;
@@ -563,6 +574,7 @@ footer{
     p{
         font-size: 16px;
         color: #000000;
+        opacity: .8;
         margin-bottom: 7px;
     }
 }
@@ -719,6 +731,7 @@ footer{
         font-family: BpgArial; 
         color: #ffffff;
         font-size: 14px;
+        opacity: .8;
 
     } 
      &:first-child p{
@@ -883,11 +896,19 @@ footer{
         background-color: #ffffff;
         height: 100%;
         padding: 14px;
+        .run{
+            color: #FF8039;
+        }
+
+        .nw{
+            color: #3366FF;
+        }
+
         p{
             color: #333333;
             font-family: BpgArial; 
             font-size: 14px;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
     }
 }
