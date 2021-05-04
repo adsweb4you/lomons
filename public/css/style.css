@@ -8,7 +8,7 @@ a:hover {
 }
 
 .carousel-item {
-  height: 540px;
+  height: 760px;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -466,7 +466,7 @@ footer form button {
   color: #333333;
 }
 .auth-form input:not([type=checkbox]) {
-  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
   border: none;
   height: calc(1.7em + .75rem + 2px);
   color: #333333;
@@ -487,6 +487,7 @@ footer form button {
   border-radius: 15px;
   color: #101010;
   font-size: 22px;
+  padding: 0.375rem 1.4rem;
   margin: auto;
   display: block;
 }
@@ -966,6 +967,49 @@ footer form button {
   height: 18px;
 }
 
+#authmodal .modal-dialog {
+  max-width: 1080px;
+}
+#authmodal .modal-dialog .modal-content {
+  padding: 46px;
+  border-radius: 18px;
+}
+#authmodal .modal-dialog #soccols {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.forgpass {
+  text-align: right;
+  font-size: 12px;
+  display: block;
+  font-family: BpgArial;
+}
+
+#user .modal-content {
+  padding: 46px;
+  border-radius: 18px;
+}
+#user h4 {
+  opacity: 0.8;
+  font-size: 24px;
+  color: #333333;
+}
+#user #soccols {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 11;
+}
+
 @media (max-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px !important;
@@ -993,11 +1037,14 @@ footer form button {
   }
 
   .search {
-    bottom: -22px;
+    bottom: -27px;
+    width: 100%;
+    right: 0;
+    padding: 0 7px;
   }
 
   .navbar.showednav {
-    height: 363px;
+    height: 390px;
   }
 
   .navbar-nav {
