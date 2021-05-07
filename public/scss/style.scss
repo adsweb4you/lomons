@@ -1207,13 +1207,35 @@ footer{
 .swiper-button-nexts{
     left: 7px !important;
     z-index: 9999;
-
-    
-
 }
+
+
+footer{
+  
+    .list-inline{
+ 
+            
+        li{
+            display: block;
+            text-align: center;
+            margin-right: 0 !important;
+        } 
+       }
+    }
 .swiper-button-prevs{
   right: 7px  !important;
   z-index: 9999;
+}
+
+form button{
+    width: 100%;
+    img{
+      display: none;
+    }
+}
+
+.social.text-left{
+    text-align: center !important;
 }
 }
 

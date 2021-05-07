@@ -1061,9 +1061,26 @@ footer form button {
     z-index: 9999;
   }
 
+  footer .list-inline li {
+    display: block;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+
   .swiper-button-prevs {
     right: 7px !important;
     z-index: 9999;
+  }
+
+  form button {
+    width: 100%;
+  }
+  form button img {
+    display: none;
+  }
+
+  .social.text-left {
+    text-align: center !important;
   }
 }
 @media (min-width: 576px) {
